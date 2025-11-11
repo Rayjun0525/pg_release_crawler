@@ -5,7 +5,9 @@ PG_CONFIG = pg_config
 PGXS := $(shell $(PG_CONFIG) --pgxs)
 include $(PGXS)
 
-# Python 파일도 함께 설치
+SRCDIR = src
+OBJS = $(SRCDIR)/pg_release.o
+
 install:
 	$(MAKE) -C src install
 	mkdir -p $(DESTDIR)/usr/share/pg_release
