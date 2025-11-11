@@ -1,0 +1,5 @@
+# pg_release.control
+comment = 'Fetch PostgreSQL release notes and import them into a database table'
+default_version = '1.0'
+relocatable = true
+module_pathname = '$libdir/pg_release'
